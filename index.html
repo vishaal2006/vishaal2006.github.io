@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Vishaal S — Aerospace Engineering · Research · Exploration</title>
+<meta name="description" content="Portfolio and journal of Vishaal S, aerospace engineering student and aspiring propulsion researcher.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Inter:wght@400;500&family=Cormorant+Garamond:ital,wght@0,500;1,500&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f6f1e7;--fg:#1b1b1d;--mid:#0e1b3a;--mute:#6b707a;--cu:#9c6b3f;--line:#d9d1c0;--card:#ece5d6;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0b1226;--fg:#efe9dc;--mid:#d9c9a8;--mute:#9aa1ae;--cu:#cf9a68;--line:#24304f;--card:#121b35}}
+:root[data-theme="dark"]{--bg:#0b1226;--fg:#efe9dc;--mid:#d9c9a8;--mute:#9aa1ae;--cu:#cf9a68;--line:#24304f;--card:#121b35}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:70px;height:100%}
+body{margin:0;background:var(--bg);color:var(--fg);font:17px/1.65 Inter,system-ui,sans-serif}
+h1,h2,h3,.sg{font-family:'Space Grotesk',system-ui,sans-serif;letter-spacing:-.02em;line-height:1.05;margin:0}
+.q{font-family:'Cormorant Garamond',Georgia,serif;font-style:italic}
+a{color:inherit}.w{max-width:1100px;margin:auto;padding:0 24px}
+section{padding:110px 0;border-top:1px solid var(--line)}
+.n{font:500 13px 'Space Grotesk';color:var(--cu);letter-spacing:.15em;margin-bottom:14px;display:block}
+h2{font-size:clamp(38px,7vw,84px);margin-bottom:34px}
+p{max-width:62ch}.m{color:var(--mute)}
+#bar{position:fixed;top:0;left:0;height:3px;background:var(--cu);width:0;z-index:60}
+header{position:fixed;top:0;left:0;right:0;z-index:50;padding:calc(10px + env(safe-area-inset-top,0px)) 24px 10px;display:flex;justify-content:space-between;align-items:center;background:var(--bg);border-bottom:1px solid var(--line)}
+header b{font:700 15px 'Space Grotesk';letter-spacing:.12em}
+button{font:inherit;cursor:pointer;color:inherit}
+.bt{background:none;border:1px solid var(--fg);padding:10px 20px;font:500 14px 'Space Grotesk';letter-spacing:.06em;text-decoration:none;display:inline-block;transition:.25s}
+.bt:hover,.bt.f{background:var(--fg);color:var(--bg)}.bt.f:hover{background:var(--cu);border-color:var(--cu)}
+#menu{position:fixed;inset:0;background:var(--mid);color:var(--bg);z-index:49;display:none;flex-direction:column;justify-content:center;padding:80px 32px}
+#menu.o{display:flex}#menu a{font:700 clamp(26px,6vw,44px) 'Space Grotesk';text-decoration:none;padding:4px 0}
+#menu a small{font-size:13px;color:var(--cu);margin-right:14px}
+@media(prefers-color-scheme:dark){#menu{background:#05080f;color:#efe9dc}}
+nav.d a.on{color:var(--cu)}
+#hero{min-height:100vh;display:flex;align-items:center;position:relative;overflow:hidden;border:0;padding-top:90px}
+#hero svg{position:absolute;right:-8%;top:50%;transform:translate(var(--px,0px),calc(-50% + var(--py,0px)));transition:transform .8s ease-out;width:min(900px,120vw);opacity:.55;z-index:0}
+#hero .w{position:relative;z-index:1}
+#hero h1{font-size:clamp(56px,13vw,170px)}
+.sub{font:500 13px 'Space Grotesk';letter-spacing:.2em;color:var(--cu);margin:20px 0}
+.row{display:flex;gap:14px;flex-wrap:wrap;margin-top:30px}
+.big{font:500 clamp(24px,4vw,44px)/1.25 'Space Grotesk';max-width:24ch}.big em{font-family:'Cormorant Garamond',serif;color:var(--cu)}
+.g4{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:1px;background:var(--line);border:1px solid var(--line)}
+.g4 a{background:var(--bg);padding:34px 26px 60px;text-decoration:none;transition:.3s;min-height:230px}
+.g4 a:hover{background:var(--mid);color:var(--bg)}.g4 h3{font-size:30px;margin:10px 0}
+.tag{display:inline-block;font:500 11px 'Space Grotesk';letter-spacing:.14em;border:1px solid var(--cu);color:var(--cu);padding:3px 9px;margin:0 6px 6px 0}
+.prj{border-top:1px solid var(--line);padding:30px 0}
+.prj h3{font-size:clamp(26px,4vw,42px);margin:8px 0 14px}
+details{border-bottom:1px solid var(--line);padding:14px 0}summary{cursor:pointer;font:500 17px 'Space Grotesk'}
+details p{margin:10px 0 0}
+.ph{background:var(--card);border:1px dashed var(--mute);display:flex;align-items:center;justify-content:center;color:var(--mute);font:500 12px 'Space Grotesk';letter-spacing:.12em;text-align:center;padding:12px;aspect-ratio:4/3;cursor:zoom-in;width:100%}
+.gal{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;margin:24px 0}
+.gal .ph:nth-child(3n+1){aspect-ratio:3/4}
+.tl{border-left:2px solid var(--cu);padding-left:28px;margin-left:6px}
+.tl article{margin-bottom:48px;position:relative}.tl article:before{content:"";position:absolute;left:-36px;top:8px;width:14px;height:14px;background:var(--bg);border:2px solid var(--cu);border-radius:50%}
+.tl h3{font-size:clamp(24px,3.5vw,36px)}.tl ul{padding-left:20px;max-width:62ch}
+.js .rv>*{opacity:0;transform:translateY(26px);transition:opacity .8s ease,transform .8s cubic-bezier(.2,.7,.2,1)}
+.js .rv.in>*{opacity:1;transform:none}
+.js .rv>h2{letter-spacing:.08em;transition:opacity .9s ease,transform .9s cubic-bezier(.2,.7,.2,1),letter-spacing 1.2s cubic-bezier(.2,.7,.2,1)}
+.js .rv.in>h2{letter-spacing:-.02em}
+@keyframes up{from{opacity:0;transform:translateY(22px)}}
+@keyframes ch{from{opacity:0;transform:translateY(70%) skewY(8deg);filter:blur(8px)}}
+@keyframes pg{from{opacity:0;transform:translateY(14px)}}
+@keyframes fade{from{opacity:0}}
+.ch{display:inline-block;animation:ch 1s cubic-bezier(.2,.7,.2,1) both;animation-delay:calc(var(--i)*60ms + 250ms)}
+#hero svg{animation:fade 2.4s ease both}
+#hero .sub{animation:up .8s .1s both}#hero p.q{animation:up .9s 1.1s both}#hero .row{animation:up .9s 1.4s both}
+.js section.v.act{animation:pg .55s ease both}
+.rv.in .hub>*{animation:up .6s both;animation-delay:calc(var(--i,0)*60ms)}
+#bx>*:not(.hub){animation:up .5s both}
+details[open]>*:not(summary){animation:up .5s both}
+.ph{transition:transform .35s,border-color .3s}.ph:hover{transform:scale(1.03);border-color:var(--cu)}
+.tl article:before{transition:background .3s,transform .3s}.tl article:hover:before{background:var(--cu);transform:scale(1.3)}
+
+
+.fl{display:flex;gap:10px;flex-wrap:wrap;margin:18px 0}.fl button{background:none;border:1px solid var(--line);padding:6px 14px;font:500 13px 'Space Grotesk'}.fl button.on{background:var(--fg);color:var(--bg)}
+input[type=search]{width:100%;max-width:420px;padding:12px;border:1px solid var(--fg);background:transparent;color:inherit;font:inherit}
+.je{border-top:1px solid var(--line);padding:20px 0}.je h3{font-size:24px}
+.tk{display:flex;gap:10px;flex-wrap:wrap;margin:14px 0}
+.tk span{border:1px solid var(--line);padding:5px 12px;font-size:14px}
+.cv{font:500 clamp(30px,6vw,70px) 'Cormorant Garamond',serif;text-align:center;padding:60px 0}
+.sk{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:24px}.sk h3{font-size:20px;margin-bottom:8px}
+#lb{position:fixed;inset:0;background:rgba(5,8,15,.94);color:#fff;display:none;align-items:center;justify-content:center;z-index:80;font:500 18px 'Space Grotesk';padding:30px;text-align:center}
+#lb.o{display:flex}
+footer{padding:80px 0 50px;border-top:1px solid var(--line)}footer a{margin-right:22px}
+:focus-visible{outline:2px solid var(--cu);outline-offset:3px}
+@media(prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}html{scroll-behavior:auto}.js .rv>*{opacity:1;transform:none}.js .rv>h2{letter-spacing:-.02em}}
+@keyframes orb{to{transform:rotate(360deg)}}.o1{transform-origin:450px 450px;animation:orb 90s linear infinite}.o2{transform-origin:450px 450px;animation:orb 140s linear infinite reverse}
+@media(min-width:900px){#mb{display:none}}@media(max-width:899px){nav.d{display:none}}
+nav.d{display:flex;gap:16px;font:500 12px 'Space Grotesk';letter-spacing:.08em}nav.d a{text-decoration:none}
+section.v{padding-top:130px}.js section.v{display:none}.js section.v.act{display:block}section#home.act{padding-top:0}
+.hub{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:1px;background:var(--line);border:1px solid var(--line);margin:0 auto}
+.hub a{background:var(--bg);padding:26px 24px;text-decoration:none;display:flex;gap:18px;align-items:baseline;transition:.25s}
+.hub a:hover{background:var(--mid);color:var(--bg)}.hub a:hover small{color:#cf9a68}
+.hub small{font:500 13px 'Space Grotesk';color:var(--cu)}.hub h3{font-size:clamp(26px,3.4vw,38px)}.hub span{display:block;font-size:14px;opacity:.7;margin-top:4px}
+.hub i{margin-left:auto;font-style:normal;font-size:24px}
+.pn{display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap;margin:60px 0 0;padding-top:24px;border-top:1px solid var(--line)}
+.hub button{background:var(--bg);border:0;padding:26px 24px;display:flex;gap:18px;align-items:baseline;text-align:left;transition:.25s;width:100%;color:inherit}
+.hub button:hover{background:var(--mid);color:var(--bg)}.hub button:hover small{color:#cf9a68}
+details.prj>summary{font:700 clamp(22px,3.4vw,34px)/1.2 'Space Grotesk',sans-serif;letter-spacing:-.02em;list-style:none;display:block;position:relative;padding-right:40px}
+details.prj>summary::-webkit-details-marker{display:none}details.prj>summary::after{content:"+";position:absolute;right:0;top:0;color:var(--cu);font-size:32px}
+details.prj[open]>summary::after{content:"–"}details.prj>summary .tag{margin-bottom:10px}details.prj{padding:24px 0}
+.tl details.prj{border:0;padding:0}
+.idx{display:grid;grid-template-columns:1.25fr 1fr;gap:48px;align-items:start}
+#hub a{display:flex;gap:18px;align-items:baseline;padding:14px 0;border-bottom:1px solid var(--line);font:700 clamp(28px,4.4vw,52px)/1.1 'Space Grotesk',sans-serif;letter-spacing:-.02em;text-decoration:none;transition:padding .35s,color .3s}
+#hub a small{font:500 13px 'Space Grotesk';color:var(--cu);letter-spacing:.1em;min-width:26px}#hub a i{margin-left:auto;font-style:normal;opacity:0;transform:translateX(-10px);transition:.3s;color:var(--cu)}
+#hub a:hover,#hub a:focus-visible{padding-left:16px;color:var(--cu)}#hub a:hover i,#hub a:focus-visible i{opacity:1;transform:none}
+#pv{position:sticky;top:100px;border-left:2px solid var(--cu);padding:8px 0 8px 30px;min-height:240px}
+#pv b{font:700 clamp(70px,9vw,130px)/1 'Space Grotesk';color:var(--line);display:block}#pv h3{font-size:30px;margin:6px 0 10px}#pv p{margin:0}
+@media(max-width:800px){.idx{grid-template-columns:1fr}#pv{display:none}}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:34px 0}
+.stats b{font:700 clamp(46px,7vw,88px)/1 'Space Grotesk';color:var(--cu);display:block}.stats span{font-size:14px;color:var(--mute)}
+#cur{position:fixed;left:0;top:0;width:34px;height:34px;margin:-17px 0 0 -17px;border:1.5px solid var(--cu);border-radius:50%;pointer-events:none;z-index:90;opacity:0;transition:width .25s,height .25s,margin .25s,background .25s,opacity .3s}
+#cur.h{width:62px;height:62px;margin:-31px 0 0 -31px;background:rgba(156,107,63,.15)}
+#th{margin-left:auto;margin-right:12px;background:none;border:1px solid var(--line);width:38px;height:38px;border-radius:50%;font-size:16px}
+nav.d{order:1;gap:26px}#mb{order:1}#th{order:2;margin-left:auto;margin-right:18px}header b{order:3}
+#cur{width:40px;height:40px;margin:-20px 0 0 -20px;display:flex;align-items:center;justify-content:center;border:1px solid var(--cu);transition:width .3s,height .3s,margin .3s,background .3s,opacity .3s}
+#cur::after{content:attr(data-l);font:500 10px 'Space Grotesk';letter-spacing:.16em;color:var(--cu)}
+#cur.h{width:64px;height:64px;margin:-32px 0 0 -32px;background:rgba(156,107,63,.14)}
+#cur.v{width:88px;height:88px;margin:-44px 0 0 -44px;background:rgba(156,107,63,.14)}
+#dot{position:fixed;left:0;top:0;width:7px;height:7px;margin:-3.5px 0 0 -3.5px;background:var(--cu);border-radius:50%;pointer-events:none;z-index:91;opacity:0}
+html.cu,html.cu *{cursor:none!important}html.cu input{cursor:text!important}
+header b{order:1}nav.d{order:2;margin-left:auto}#th{order:3;margin:0 0 0 18px}#mb{order:4;margin-left:12px}
+@media(max-width:899px){#th{margin-left:auto}}
+#cur,#cur.h,#cur.v{width:40px;height:40px;margin:-20px 0 0 -20px;border:0;background:none;display:block;color:var(--cu)}
+#cur::after{content:none}#cur svg{width:100%;height:100%;transition:transform .5s cubic-bezier(.2,.7,.2,1)}
+#cur.h svg,#cur.v svg{transform:rotate(45deg) scale(1.5)}
+#dot{width:auto;height:auto;margin:0;background:none;border-radius:0;font:500 10px/1 'Space Grotesk',sans-serif;letter-spacing:.12em;color:var(--cu);white-space:nowrap}
+#cur,#cur.h,#cur.v{width:30px;height:30px;margin:-15px 0 0 -15px}
+#cur svg{fill:var(--cu);stroke:var(--bg);stroke-width:1.5;stroke-linejoin:round;transition:none;filter:drop-shadow(0 2px 3px rgba(0,0,0,.25))}
+#dot{display:none}#trail{position:fixed;inset:0;pointer-events:none;z-index:89}
+</style></head><body>
+<div id="bar"></div>
+<header><b><a href="#home" style="text-decoration:none">VISHAAL S</a></b>
+<nav class="d" aria-label="Main"></nav>
+<button id="mb" class="bt" aria-expanded="false" aria-controls="menu">MENU</button></header>
+<div id="cur" aria-hidden="true"><svg viewBox="0 0 40 40"><path d="M20 3 29 35 20 29 11 35Z"/></svg></div><div id="dot"></div>
+<div id="menu" role="dialog" aria-label="Menu"></div>
+
+<main>
+<section class="v" id="home">
+<div id="hero" style="min-height:100vh;display:flex;align-items:center;position:relative;overflow:hidden">
+<svg viewBox="0 0 900 900" fill="none" stroke="currentColor" aria-hidden="true" style="color:var(--cu)">
+<g stroke-width=".6" opacity=".4"><path d="M0 450H900M450 0V900M150 0V900M750 0V900M0 150H900M0 750H900"/></g>
+<g class="o1"><ellipse cx="450" cy="450" rx="380" ry="150" transform="rotate(-24 450 450)" stroke-width="1.2"/><circle cx="800" cy="300" r="7" fill="currentColor"/></g>
+<g class="o2"><ellipse cx="450" cy="450" rx="250" ry="250" stroke-dasharray="3 7"/><circle cx="450" cy="200" r="5" fill="currentColor"/></g>
+<circle cx="450" cy="450" r="40" stroke-width="1.5"/></svg>
+<div class="w"><div class="sub">AEROSPACE ENGINEERING · RESEARCH | EXPLORATION | CREATIVITY</div>
+<h1>VISHAAL S</h1>
+<p class="q" style="font-size:clamp(22px,3vw,32px);margin-top:24px;max-width:30ch">Exploring the science of flight, the engineering of propulsion, and the world beyond the horizon.</p>
+<div class="row"><a class="bt f" href="#home" onclick="document.getElementById('intro').scrollIntoView({behavior:'smooth'});return false">Explore My Journey</a><a class="bt" href="#projects">View Engineering Work</a></div></div></div>
+<div class="w rv" id="intro" style="padding-top:110px;padding-bottom:30px"><span class="n">ABOUT</span>
+<h2>The person behind the work.</h2>
+<p class="big">I want to understand why machines fly, burn and hold together, then help build the next one.</p>
+<p style="margin-top:34px">I am an aerospace engineering student at Amrita Vishwa Vidyapeetham, with the Foundation level of IIT Madras’s Data Science programme completed in 2024. My focus is propulsion: combustion, ignition, nozzles, and the high-speed flow that connects them.</p>
+<p>This year it moved off the page. At Prime Toolings I designed and analysed a propulsion test rig in ANSYS and followed it through fabrication, welding and assembly, then worked on a hydrogen–oxygen torch igniter and static firing tests. At HAL I watched the LCA Tejas come together on final assembly. Alongside, I build sensing systems and design a tube-launched UAV.</p>
+<p><b>How I work:</b> fundamentals before shortcuts, the physics before the formula, theory tested against hardware, and code to make sense of the data.</p>
+<p>Away from the desk: mountain trails, temple architecture, sketching and painting, and a camera. They are separate parts of my life, and I like keeping them that way.</p>
+<p class="m"><i>[Placeholder — add a personal paragraph and portrait photograph here.]</i></p>
+<p class="sg" style="margin-top:40px;font-size:15px;letter-spacing:.18em;color:var(--cu)">ENGINEER · RESEARCHER · EXPLORER · CREATOR</p>
+</div>
+<div class="w rv" id="st" style="padding-top:40px;padding-bottom:20px"><div class="stats"><div><b data-n="2">2</b><span>internships in 2026</span></div><div><b data-n="2">2</b><span>engineering projects</span></div><div><b id="jn" data-n="0">0</b><span>journal entries</span></div></div></div>
+<div class="w rv" style="padding-top:70px;padding-bottom:110px"><span class="n">INDEX — CHOOSE A PAGE</span><h2 style="font-size:clamp(34px,6vw,64px)">Everything starts here.</h2><div class="idx"><div id="hub"></div><aside id="pv" aria-live="polite"></aside></div><p class="m" style="margin-top:22px;font-size:14px">Hover a page to preview it. Keyboard: press 1–7 to jump, 0 for home.</p>
+<div class="cv" style="padding:70px 0 0"><span class="q">Dream. Build. Become.</span></div></div>
+</section>
+
+<section class="v" id="academics"><div class="w rv"><span class="n">02 — ACADEMICS</span><h2>Academics.</h2>
+<div class="tl"><article><span class="tag">2024 – PRESENT</span><h3>B.Tech Aerospace Engineering</h3><p class="m">Amrita Vishwa Vidyapeetham</p><p class="m"><i>[Placeholder — relevant subjects, academic interests, milestones.]</i></p></article>
+<article><span class="tag">2024 – PRESENT</span><h3>Data Science</h3><p class="m">IIT Madras</p><p><b>Foundation level completed in 2024.</b> Mathematical foundations, programming, statistics, data analysis and computational thinking.</p></article></div>
+<h3 style="font-size:28px;margin:20px 0">Technical skills</h3>
+<div class="sk"><div><h3>Programming &amp; computation</h3><p class="m">MATLAB · Python</p></div><div><h3>Engineering software</h3><p class="m">ANSYS Mechanical · CATIA · Autodesk Fusion 360</p></div></div>
+<p class="m" style="margin-top:20px"><small>No proficiency ratings are shown until verified.</small></p></div></section>
+
+<section class="v" id="research"><div class="w rv"><span class="n">03 — RESEARCH</span><h2>Research interests.</h2>
+<p class="m">Status labels are explicit. Everything below is a <b>general academic interest</b> — no completed or ongoing research is claimed.</p>
+<div id="rs"></div>
+<p class="m" style="margin-top:20px"><small>Each topic follows the same template, so new work can be added to the data list in the page script.</small></p></div></section>
+
+<section class="v" id="projects"><div class="w rv"><span class="n">04 — PROJECTS</span><h2>Engineering work.</h2><p class="m">Open a project to read it.</p>
+<details class="prj"><summary><span class="tag">PROJECT 01</span><br>Wireless Multi-Probe Capacitive Fuel Gauging with Dual-Regime Attitude Compensation</summary>
+<p>A wireless capacitive fuel gauging system using the FDC2214 capacitance-to-digital converter for liquid-level measurement. An MPU6050 IMU measures tank orientation for attitude compensation, and ESP32 boards communicate over ESP-NOW. A prototype was built and calibrated with a transparent rectangular tank and sunflower oil.</p>
+<div class="tk"><span>FDC2214</span><span>MPU6050</span><span>ESP32</span><span>ESP-NOW</span><span>MATLAB</span></div>
+<details><summary>System architecture</summary><p class="m">[Placeholder — add diagram: probes → FDC2214 → ESP32 → ESP-NOW → receiver.]</p></details>
+<details><summary>Calibration methodology &amp; experimental setup</summary><p class="m">[Placeholder — describe your calibration procedure and test conditions.]</p></details>
+<details><summary>Results &amp; challenges</summary><p class="m">[Placeholder — add only measured results and real challenges.]</p></details>
+<div class="gal"><div class="ph" tabindex="0">HARDWARE PHOTO</div><div class="ph" tabindex="0">SENSOR ARRANGEMENT</div></div></details>
+<details class="prj"><summary><span class="tag">PROJECT 02</span><span class="tag">ONGOING</span><br>Tube-Launched UAV — Preliminary Design</summary>
+<p>Conceptual design of a compact tube-launched UAV, evaluating configuration trade-offs, with preliminary aerodynamic and feasibility assessments for deployment stability. Studies cover materials, deployment constraints and stability requirements.</p>
+<details><summary>Configuration studies, CAD &amp; future development</summary><p class="m">[Placeholder — add CAD renders and design constraints.]</p></details></details>
+<details class="prj"><summary><span class="tag">PROJECT 03+</span><br>Archive</summary><p class="m">Reserved for future work: propulsion · structures · aerodynamics · avionics · computational engineering.</p></details></div></section>
+
+<section class="v" id="exp"><div class="w rv"><span class="n">05 — EXPERIENCE</span><h2>Industrial exposure.</h2><p class="m">Open an entry to read it.</p>
+<div class="tl"><article><details class="prj"><summary><span class="tag">MAY – JUNE 2026</span><br>Aircraft Assembly Intern<br><span class="m" style="font:400 16px Inter,sans-serif;letter-spacing:0">Hindustan Aeronautics Limited · Aircraft Division, Bengaluru</span></summary>
+<p>Industrial exposure to final assembly of the LCA Tejas: component integration, assembly workflows, and coordination between engineering and production, with attention to dimensional accuracy, quality requirements and manufacturing standards. Restricted technical details are intentionally omitted.</p></details></article>
+<article><details class="prj"><summary><span class="tag">APRIL – MAY 2026</span><br>Propulsion Systems Intern<br><span class="m" style="font:400 16px Inter,sans-serif;letter-spacing:0">Prime Toolings · Bengaluru</span></summary>
+<ul><li>Designed and structurally analysed a propulsion test rig in ANSYS Mechanical, then fabricated, welded and assembled the structure for loads up to 10 kN.</li><li>Contributed to development and testing of a gaseous hydrogen–oxygen supersonic torch igniter operating at 5 bar.</li><li>Assisted in experimental testing: rig integration, engine mounting, gas-line routing, and static firings of liquid spike and convergent nozzle configurations.</li></ul>
+<p>Practical exposure to combustion behaviour, ignition systems, nozzle characteristics and experimental propulsion testing.</p></details></article></div></div></section>
+
+<section class="v" id="expeditions"><div class="w rv"><span class="n">06 — BEYOND ENGINEERING</span><h2>Beyond engineering.</h2>
+<p class="m">Choose a section to open it. Dates, routes and photographs are placeholders until you add them.</p>
+<div id="bx"></div></div></section>
+
+<section class="v" id="journal"><div class="w rv"><span class="n">07 — JOURNAL</span><h2>Journal.</h2>
+<input type="search" id="q" placeholder="Search entries" aria-label="Search journal"><div class="fl" id="fl"></div><div id="jl"></div></div></section>
+
+<section class="v" id="contact"><div class="w rv"><span class="n">08 — CONTACT</span><h2>Say hello.</h2>
+<p class="big" style="margin-bottom:30px">Dream. Build. Become.</p>
+<p>Vishaal S · Coimbatore, India</p>
+<div class="row"><a class="bt f" href="mailto:vishaals2006@gmail.com">vishaals2006@gmail.com</a><a class="bt" href="https://linkedin.com/in/vishaals" rel="noopener">LinkedIn</a><a class="bt" href="https://instagram.com/_vishaal_s_" rel="noopener">Instagram</a><span class="bt m" title="Add when available">GitHub — soon</span><span class="bt m" title="Add resume file">Resume — add PDF</span></div></div></section>
+</main>
+<footer><div class="w m">© Vishaal S · Built to grow with the journey.</div></footer>
+<div id="lb" role="dialog" aria-label="Image viewer"><div>Image viewer — click or press Esc to close<br><small>Replace placeholders with your photographs.</small></div></div>
+
+<script>
+const S=[["home","Home"],["academics","Academics"],["research","Research"],["projects","Projects"],["exp","Experience"],["expeditions","Beyond Engineering"],["journal","Journal"],["contact","Contact"]];
+const $=s=>document.querySelector(s),menu=$("#menu"),mb=$("#mb");
+$("nav.d").innerHTML=S.slice(1).map(([i,t])=>`<a href="#${i}">${t.toUpperCase()}</a>`).join("");
+menu.innerHTML=S.map(([i,t],k)=>`<a href="#${i}"><small>${String(k+1).padStart(2,"0")}</small>${t}</a>`).join("");
+const tg=o=>{menu.classList.toggle("o",o);mb.textContent=o?"CLOSE":"MENU";mb.setAttribute("aria-expanded",o)};
+mb.onclick=()=>tg(!menu.classList.contains("o"));menu.onclick=e=>{if(e.target.tagName=="A"||e.target.closest("a"))tg(false)};
+const R=[["Propulsion systems","Rocket and gas turbine propulsion, combustion and ignition, electric propulsion."],["Aerodynamics & gas dynamics","Compressible flow, supersonic and hypersonic aerodynamics, CFD."],["Space propulsion","Solar radiation pressure, solar sails, spacecraft propulsion."]];
+const T=["Research motivation","Scientific background","Problem definition","Governing principles","Research questions","Methodology","Simulations & calculations","Results (when available)","References & publications"];
+$("#rs").innerHTML=R.map(([t,d])=>`<details><summary>${t} <span class="tag">GENERAL INTEREST</span></summary><p>${d}</p>${T.map((x,i)=>`<p class="m">${i+1}. ${x} — <i>[to be added]</i></p>`).join("")}</details>`).join("");
+const J=[{t:"Sample entry — replace me",d:"2026-01-01",c:"Engineering notes",x:"Placeholder. Add title, date, category, cover image and article text to this list."},{t:"Sample entry — a trek",d:"2026-01-02",c:"Travel",x:"Placeholder for a travel journal entry."},{t:"Sample entry — a sketch",d:"2026-01-03",c:"Art",x:"Placeholder for artwork notes."}];
+let cat="All";const cats=["All",...new Set(J.map(j=>j.c))];
+function rj(){const q=$("#q").value.toLowerCase();$("#fl").innerHTML=cats.map(c=>`<button class="${c==cat?"on":""}">${c}</button>`).join("");
+$("#jl").innerHTML=J.filter(j=>(cat=="All"||j.c==cat)&&(j.t+j.x).toLowerCase().includes(q)).map(j=>`<div class="je"><span class="tag">${j.c.toUpperCase()}</span> <span class="m">${j.d}</span><h3>${j.t}</h3><p class="m">${j.x}</p></div>`).join("")||'<p class="m">No entries.</p>'}
+$("#fl").onclick=e=>{if(e.target.tagName=="BUTTON"){cat=e.target.textContent;rj()}};$("#q").oninput=rj;rj();
+const lb=$("#lb");document.addEventListener("click",e=>{if(e.target.classList.contains("ph"))lb.classList.add("o");else if(lb.classList.contains("o"))lb.classList.remove("o")});
+document.addEventListener("keydown",e=>{if(e.key=="Escape"){lb.classList.remove("o");tg(false)}if(e.key=="Enter"&&e.target.classList.contains("ph"))lb.classList.add("o")});
+const io=new IntersectionObserver(a=>a.forEach(x=>x.isIntersecting&&x.target.classList.add("in")),{threshold:.08});document.querySelectorAll(".rv").forEach(x=>io.observe(x));
+const D={academics:"B.Tech Aerospace at Amrita, Data Science at IIT Madras, and the tools I work with.",research:"Propulsion, gas dynamics and space propulsion, with every topic labelled by its real status.",projects:"A wireless fuel gauge and a tube-launched UAV design. Open one to read it.",exp:"Propulsion test rigs at Prime Toolings and aircraft assembly at HAL.",expeditions:"Mountain treks and artwork, away from the desk.",journal:"A blog for notes and reflections, with search and filters.",contact:"Email, LinkedIn and Instagram."};
+$("#hub").innerHTML=S.slice(1).map(([i,t],k)=>`<a href="#${i}" data-k="${k}"><small>${String(k+1).padStart(2,"0")}</small>${t}<i>→</i></a>`).join("");
+const pv=$("#pv"),pvs=i=>{const k=S.findIndex(x=>x[0]==i),t=S[k][1];pv.innerHTML=`<b>${String(k).padStart(2,"0")}</b><h3>${t}</h3><p class="m">${D[i]}</p>`};
+$("#hub").addEventListener("mouseover",e=>{const a=e.target.closest("a");if(a)pvs(a.getAttribute("href").slice(1))});$("#hub").addEventListener("focusin",e=>{const a=e.target.closest("a");if(a)pvs(a.getAttribute("href").slice(1))});pvs("academics");
+
+document.querySelectorAll("section.v").forEach(sec=>{if(sec.id=="home")return;const k=S.findIndex(x=>x[0]==sec.id),pv=S[k-1],nx=S[k+1];sec.querySelector(".w").insertAdjacentHTML("afterbegin",'<a class="bt" href="#home" style="margin-bottom:34px">← Home</a><br>');sec.querySelector(".w").insertAdjacentHTML("beforeend",`<div class="pn"><a class="bt" href="#${pv[0]}">← ${pv[1]}</a>`+(nx?`<a class="bt" href="#${nx[0]}">${nx[1]} →</a>`:"")+"</div>")});
+const B=[["Treks","Mountains & forests",["Velliangiri — South Kailash","Melmudi — Thadagam Reserve Forest","Perumalmudi"],"Date, route, distance and personal notes: <i>[add]</i>","PHOTOGRAPH"],
+["Art","Gallery",null,"Notes on the work: <i>[add]</i>. Pieces are shown unfiltered; selected ones may be monochrome.","ARTWORK"],];
+const bx=$("#bx");
+function bl(){bx.innerHTML='<div class="hub">'+B.map(([t,g,it],i)=>`<button data-i="${i}"><small>${String(i+1).padStart(2,"0")}</small><div><h3>${t}</h3><span>${g}${it?" · "+it.length+" entries":""}</span></div><i>→</i></button>`).join("")+"</div>";ss()}
+function bo(i){const [t,g,it,note,lab]=B[i];let h;
+if(!it)h=`<p class="m">${note}</p><div class="gal">${[1,2,3,4,5,6].map(n=>`<div class="ph" tabindex="0">${lab} ${String(n).padStart(2,"0")}</div>`).join("")}</div>`;
+else h='<p class="m">Open an entry to view it.</p>'+it.map(n=>`<details class="prj"><summary>${n}</summary><p class="m">${note}</p><div class="gal">${[1,2,3].map(()=>`<div class="ph" tabindex="0">${lab}</div>`).join("")}</div></details>`).join("");
+bx.innerHTML=`<button class="bt" id="bk">← All sections</button><h3 style="font-size:clamp(30px,5vw,56px);margin:28px 0 8px">${t}</h3><span class="tag">${g.toUpperCase()}</span>${h}`;
+$("#bk").onclick=()=>{bl();scrollTo(0,0)};scrollTo(0,0)}
+bx.addEventListener("click",e=>{const b=e.target.closest("button[data-i]");if(b)bo(+b.dataset.i)});bl();
+const h1=document.querySelector("#hero h1");h1.setAttribute("aria-label",h1.textContent);h1.innerHTML=[...h1.textContent].map((c,i)=>`<span class="ch" aria-hidden="true" style="--i:${i}">${c==" "?"&nbsp;":c}</span>`).join("");
+function ss(){document.querySelectorAll(".hub").forEach(h=>[...h.children].forEach((e,i)=>e.style.setProperty("--i",i)))}
+document.querySelectorAll(".rv").forEach(r=>[...r.children].forEach((c,i)=>c.style.transitionDelay=Math.min(i,8)*70+"ms"));
+const th=document.createElement("button");th.id="th";th.setAttribute("aria-label","Toggle theme");th.textContent="◐";th.onclick=()=>{const r=document.documentElement,d=r.dataset.theme?r.dataset.theme=="dark":matchMedia("(prefers-color-scheme:dark)").matches;r.dataset.theme=d?"light":"dark"};mb.before(th);
+{const n=J.filter(j=>!/^Sample/.test(j.t)).length;const e=$("#jn");e.dataset.n=n;e.textContent=n}
+const co=new IntersectionObserver(a=>a.forEach(x=>{if(x.isIntersecting){const e=x.target,n=+e.dataset.n;let t0;const f=t=>{t0=t0||t;const k=Math.min(1,(t-t0)/1400);e.textContent=Math.round(n*(1-Math.pow(1-k,3)));k<1&&requestAnimationFrame(f)};requestAnimationFrame(f);co.unobserve(e)}}));document.querySelectorAll("[data-n]").forEach(e=>co.observe(e));
+addEventListener("keydown",e=>{if(/INPUT|TEXTAREA/.test(e.target.tagName)||e.ctrlKey||e.metaKey||e.altKey)return;if(/^[0-7]$/.test(e.key)){location.hash=S[+e.key][0]}});
+if(matchMedia("(hover:hover) and (pointer:fine)").matches&&!matchMedia("(prefers-reduced-motion:reduce)").matches){const c=$("#cur"),sv=c.firstElementChild,cv=document.createElement("canvas"),g=cv.getContext("2d"),P=[];cv.id="trail";document.body.append(cv);const rs=()=>{cv.width=innerWidth;cv.height=innerHeight};rs();addEventListener("resize",rs);let x=0,y=0,cx=0,cy=0,a=0,ta=0,sc=1,ts=1;addEventListener("mousemove",e=>{x=e.clientX;y=e.clientY;c.style.opacity=1;document.documentElement.classList.add("cu");ts=e.target.closest("a,button,summary,.ph,input")?1.7:1;const h=$("#hero");if(h&&scrollY<innerHeight){h.style.setProperty("--px",(x/innerWidth-.5)*-36+"px");h.style.setProperty("--py",(y/innerHeight-.5)*-24+"px")}});document.addEventListener("mouseleave",()=>{c.style.opacity=0;P.length=0});(function l(){const dx=x-cx,dy=y-cy;cx+=dx*.22;cy+=dy*.22;if(Math.hypot(dx,dy)>3)ta=Math.atan2(dy,dx)*180/Math.PI+90;let d=((ta-a+540)%360)-180;a+=d*.18;sc+=(ts-sc)*.2;c.style.transform=`translate(${cx}px,${cy}px)`;sv.style.transform=`rotate(${a}deg) scale(${sc})`;P.push([cx,cy]);if(P.length>26)P.shift();g.clearRect(0,0,cv.width,cv.height);g.lineCap="round";for(let k=1;k<P.length;k++){const f=k/P.length;g.strokeStyle=`rgba(184,126,76,${f*.55})`;g.lineWidth=f*5;g.beginPath();g.moveTo(P[k-1][0],P[k-1][1]);g.lineTo(P[k][0],P[k][1]);g.stroke()}requestAnimationFrame(l)})()}
+const bar=$("#bar"),links=[...document.querySelectorAll("nav.d a")];
+function route(){document.documentElement.classList.add("js");let id=location.hash.slice(1);bl();ss();if(!document.querySelector("section.v#"+id))id="home";document.querySelectorAll("section.v").forEach(x=>x.classList.toggle("act",x.id==id));links.forEach(a=>a.classList.toggle("on",a.getAttribute("href")=="#"+id));document.title=(id=="home"?"":S.find(x=>x[0]==id)[1]+" — ")+"Vishaal S";scrollTo(0,0);prog()}
+function prog(){const h=document.documentElement;bar.style.width=(scrollY/Math.max(1,h.scrollHeight-innerHeight)*100)+"%"}
+addEventListener("scroll",prog,{passive:true});addEventListener("hashchange",route);route();
+</script></body></html>
