@@ -45,7 +45,7 @@ nav.d a.on{color:var(--cu)}
 details{border-bottom:1px solid var(--line);padding:14px 0}summary{cursor:pointer;font:500 17px 'Space Grotesk'}
 details p{margin:10px 0 0}
 .ph{background:var(--card);border:1px dashed var(--mute);display:flex;align-items:center;justify-content:center;color:var(--mute);font:500 12px 'Space Grotesk';letter-spacing:.12em;text-align:center;padding:12px;aspect-ratio:4/3;cursor:zoom-in;width:100%}
-.gal{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;margin:24px 0}
+.gal{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(220px,100%),1fr));gap:14px;margin:24px 0}
 .gal .ph:nth-child(3n+1){aspect-ratio:3/4}
 .tl{border-left:2px solid var(--cu);padding-left:28px;margin-left:6px}
 .tl article{margin-bottom:48px;position:relative}.tl article:before{content:"";position:absolute;left:-36px;top:8px;width:14px;height:14px;background:var(--bg);border:2px solid var(--cu);border-radius:50%}
@@ -75,7 +75,7 @@ input[type=search]{width:100%;max-width:420px;padding:12px;border:1px solid var(
 .tk{display:flex;gap:10px;flex-wrap:wrap;margin:14px 0}
 .tk span{border:1px solid var(--line);padding:5px 12px;font-size:14px}
 .cv{font:500 clamp(30px,6vw,70px) 'Cormorant Garamond',serif;text-align:center;padding:60px 0}
-.sk{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:24px}.sk h3{font-size:20px;margin-bottom:8px}
+.sk{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(240px,100%),1fr));gap:24px}.sk h3{font-size:20px;margin-bottom:8px}
 #lb{position:fixed;inset:0;background:rgba(5,8,15,.94);color:#fff;display:none;align-items:center;justify-content:center;z-index:80;font:500 18px 'Space Grotesk';padding:30px;text-align:center}
 #lb.o{display:flex}
 footer{padding:80px 0 50px;border-top:1px solid var(--line)}footer a{margin-right:22px}
@@ -85,7 +85,7 @@ footer{padding:80px 0 50px;border-top:1px solid var(--line)}footer a{margin-righ
 @media(min-width:900px){#mb{display:none}}@media(max-width:899px){nav.d{display:none}}
 nav.d{display:flex;gap:16px;font:500 12px 'Space Grotesk';letter-spacing:.08em}nav.d a{text-decoration:none}
 section.v{padding-top:130px}.js section.v{display:none}.js section.v.act{display:block}section#home.act{padding-top:0}
-.hub{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:1px;background:var(--line);border:1px solid var(--line);margin:0 auto}
+.hub{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(300px,100%),1fr));gap:1px;background:var(--line);border:1px solid var(--line);margin:0 auto}
 .hub a{background:var(--bg);padding:26px 24px;text-decoration:none;display:flex;gap:18px;align-items:baseline;transition:.25s}
 .hub a:hover{background:var(--mid);color:var(--bg)}.hub a:hover small{color:#cf9a68}
 .hub small{font:500 13px 'Space Grotesk';color:var(--cu)}.hub h3{font-size:clamp(26px,3.4vw,38px)}.hub span{display:block;font-size:14px;opacity:.7;margin-top:4px}
@@ -125,6 +125,26 @@ header b{order:1}nav.d{order:2;margin-left:auto}#th{order:3;margin:0 0 0 18px}#m
 #cur,#cur.h,#cur.v{width:30px;height:30px;margin:-15px 0 0 -15px}
 #cur svg{fill:var(--cu);stroke:var(--bg);stroke-width:1.5;stroke-linejoin:round;transition:none;filter:drop-shadow(0 2px 3px rgba(0,0,0,.25))}
 #dot{display:none}#trail{position:fixed;inset:0;pointer-events:none;z-index:89}
+.wd{display:inline-block;white-space:nowrap}body{overflow-x:hidden}#hero{min-height:100svh!important}
+@media(max-width:640px){
+body{font-size:16px}.w{padding:0 20px}
+header{padding-left:16px;padding-right:16px}header b{font-size:13px;letter-spacing:.08em}
+#th,.bt{min-height:44px}#th{width:44px;height:44px}#mb{padding:10px 16px}
+section{padding:70px 0}section.v{padding-top:100px}
+#hero{padding-top:84px!important}#hero h1{font-size:clamp(44px,14vw,80px)}#hero svg{opacity:.28;right:-35%;width:150vw}
+.sub{letter-spacing:.1em;font-size:12px;line-height:1.7}
+.row .bt{flex:1 1 100%;text-align:center}
+h2{font-size:clamp(34px,10.5vw,52px);margin-bottom:24px}
+.big{font-size:clamp(22px,6.4vw,30px);max-width:none}
+.stats{gap:10px;padding:26px 0}.stats b{font-size:clamp(34px,10vw,48px)}.stats span{font-size:12px;line-height:1.35;display:block;margin-top:6px}
+#hub a{font-size:clamp(26px,8vw,36px);padding:16px 0}#hub a i{opacity:1;transform:none}
+details.prj>summary{font-size:clamp(20px,5.8vw,26px)}
+.tl{padding-left:20px;margin-left:2px}.tl article:before{left:-28px}
+.hub a,.hub button{padding:22px 18px}.hub h3{font-size:26px}
+.gal{gap:10px}.pn .bt{flex:1 1 100%;text-align:center}
+.cv{padding:40px 0;font-size:clamp(26px,8vw,40px)}
+footer{padding:50px 0 40px}
+}
 </style></head><body>
 <div id="bar"></div>
 <header><b><a href="#home" style="text-decoration:none">VISHAAL S</a></b>
@@ -241,7 +261,7 @@ else h='<p class="m">Open an entry to view it.</p>'+it.map(n=>`<details class="p
 bx.innerHTML=`<button class="bt" id="bk">← All sections</button><h3 style="font-size:clamp(30px,5vw,56px);margin:28px 0 8px">${t}</h3><span class="tag">${g.toUpperCase()}</span>${h}`;
 $("#bk").onclick=()=>{bl();scrollTo(0,0)};scrollTo(0,0)}
 bx.addEventListener("click",e=>{const b=e.target.closest("button[data-i]");if(b)bo(+b.dataset.i)});bl();
-const h1=document.querySelector("#hero h1");h1.setAttribute("aria-label",h1.textContent);h1.innerHTML=[...h1.textContent].map((c,i)=>`<span class="ch" aria-hidden="true" style="--i:${i}">${c==" "?"&nbsp;":c}</span>`).join("");
+const h1=document.querySelector("#hero h1");h1.setAttribute("aria-label",h1.textContent);let wn=0;h1.innerHTML=h1.textContent.split(" ").map(w=>`<span class="wd">`+[...w].map(c=>`<span class="ch" aria-hidden="true" style="--i:${wn++}">${c}</span>`).join("")+"</span>").join(" ");
 function ss(){document.querySelectorAll(".hub").forEach(h=>[...h.children].forEach((e,i)=>e.style.setProperty("--i",i)))}
 document.querySelectorAll(".rv").forEach(r=>[...r.children].forEach((c,i)=>c.style.transitionDelay=Math.min(i,8)*70+"ms"));
 const th=document.createElement("button");th.id="th";th.setAttribute("aria-label","Toggle theme");th.textContent="◐";th.onclick=()=>{const r=document.documentElement,d=r.dataset.theme?r.dataset.theme=="dark":matchMedia("(prefers-color-scheme:dark)").matches;r.dataset.theme=d?"light":"dark"};mb.before(th);
